@@ -1,9 +1,9 @@
 (function ($) {
     $.fn.alphanumeric = function (p) {
         var input = $(this),
-            az = "abcdefghijklmnopqrstuvwxyz",
+            az = "abcdefghijklmnñopqrstuvwxyz",
             options = $.extend({
-                ichars: '!@#$%^&*()+=[]\\\';,/{}|":<>?~`.- _',
+                ichars: '!@#$%^&*()+=[]\\\';,/{}|":<>?~`.- _¡°¬´',
                 nchars: '',
                 allow: ''
             }, p),
@@ -55,7 +55,7 @@
     };
 
     $.fn.numeric = function (p) {
-        var az = 'abcdefghijklmnopqrstuvwxyz',
+        var az = 'abcdefghijklmnñopqrstuvwxyz',
             aZ = az.toUpperCase();
 
         return this.each(function () {
